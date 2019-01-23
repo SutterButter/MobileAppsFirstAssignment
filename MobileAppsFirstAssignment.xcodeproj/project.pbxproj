@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FD3175221F8FC8C00356E00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3175121F8FC8C00356E00 /* LoginViewController.swift */; };
 		4FE1B09A21F2440D0030DFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1B09921F2440D0030DFD8 /* AppDelegate.swift */; };
-		4FE1B09C21F2440D0030DFD8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1B09B21F2440D0030DFD8 /* FirstViewController.swift */; };
-		4FE1B09E21F2440D0030DFD8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1B09D21F2440D0030DFD8 /* SecondViewController.swift */; };
 		4FE1B0A121F2440D0030DFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1B09F21F2440D0030DFD8 /* Main.storyboard */; };
 		4FE1B0A321F2440E0030DFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1B0A221F2440E0030DFD8 /* Assets.xcassets */; };
 		4FE1B0A621F2440E0030DFD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1B0A421F2440E0030DFD8 /* LaunchScreen.storyboard */; };
@@ -35,10 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FD3175121F8FC8C00356E00 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4FE1B09621F2440D0030DFD8 /* MobileAppsFirstAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAppsFirstAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE1B09921F2440D0030DFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FE1B09B21F2440D0030DFD8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4FE1B09D21F2440D0030DFD8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4FE1B0A021F2440D0030DFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FE1B0A221F2440E0030DFD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FE1B0A521F2440E0030DFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,9 +97,8 @@
 		4FE1B09821F2440D0030DFD8 /* MobileAppsFirstAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				4FD3175121F8FC8C00356E00 /* LoginViewController.swift */,
 				4FE1B09921F2440D0030DFD8 /* AppDelegate.swift */,
-				4FE1B09B21F2440D0030DFD8 /* FirstViewController.swift */,
-				4FE1B09D21F2440D0030DFD8 /* SecondViewController.swift */,
 				4FE1B09F21F2440D0030DFD8 /* Main.storyboard */,
 				4FE1B0A221F2440E0030DFD8 /* Assets.xcassets */,
 				4FE1B0A421F2440E0030DFD8 /* LaunchScreen.storyboard */,
@@ -259,9 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FE1B09E21F2440D0030DFD8 /* SecondViewController.swift in Sources */,
+				4FD3175221F8FC8C00356E00 /* LoginViewController.swift in Sources */,
 				4FE1B09A21F2440D0030DFD8 /* AppDelegate.swift in Sources */,
-				4FE1B09C21F2440D0030DFD8 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KXWDJEL2WR;
 				INFOPLIST_FILE = MobileAppsFirstAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KXWDJEL2WR;
 				INFOPLIST_FILE = MobileAppsFirstAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

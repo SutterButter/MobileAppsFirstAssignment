@@ -49,6 +49,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54Y-2W-Lr0">
+                                <rect key="frame" x="168" y="219" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginPressed:" destination="5lr-T8-8j4" eventType="touchUpInside" id="vAz-TD-suM"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0MZ-ad-Ek3">
                                 <rect key="frame" x="44" y="77" width="286" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -66,10 +73,9 @@
                                     <segue destination="0KC-K8-Z9F" kind="show" id="e0z-1T-nZa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54Y-2W-Lr0">
-                                <rect key="frame" x="168" y="219" width="38" height="30"/>
-                                <state key="normal" title="Login"/>
-                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Lpx-Dd-XeB">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -79,15 +85,23 @@
                             <constraint firstItem="0MZ-ad-Ek3" firstAttribute="top" secondItem="lIX-Z5-Qge" secondAttribute="top" constant="57" id="MpG-53-yeS"/>
                             <constraint firstItem="lIX-Z5-Qge" firstAttribute="trailing" secondItem="0MZ-ad-Ek3" secondAttribute="trailing" constant="45" id="Oq5-Au-Xze"/>
                             <constraint firstItem="K2B-uu-cw8" firstAttribute="top" secondItem="0MZ-ad-Ek3" secondAttribute="bottom" constant="42" id="UaP-8s-2f3"/>
+                            <constraint firstItem="Lpx-Dd-XeB" firstAttribute="top" secondItem="YNc-8C-4rB" secondAttribute="bottom" constant="25" id="Uub-kv-PGI"/>
                             <constraint firstItem="YNc-8C-4rB" firstAttribute="top" secondItem="54Y-2W-Lr0" secondAttribute="bottom" constant="19" id="aAj-6g-pM2"/>
                             <constraint firstItem="0MZ-ad-Ek3" firstAttribute="leading" secondItem="lIX-Z5-Qge" secondAttribute="leading" constant="44" id="bdb-Fx-2Ki"/>
                             <constraint firstItem="54Y-2W-Lr0" firstAttribute="leading" secondItem="lIX-Z5-Qge" secondAttribute="leading" constant="168" id="be6-qZ-7E9"/>
+                            <constraint firstItem="lIX-Z5-Qge" firstAttribute="trailing" secondItem="Lpx-Dd-XeB" secondAttribute="trailing" constant="178" id="e7g-c8-VJo"/>
+                            <constraint firstItem="Lpx-Dd-XeB" firstAttribute="leading" secondItem="lIX-Z5-Qge" secondAttribute="leading" constant="177" id="gyz-lP-7ZY"/>
                             <constraint firstItem="lIX-Z5-Qge" firstAttribute="trailing" secondItem="YNc-8C-4rB" secondAttribute="trailing" constant="154" id="mdO-oO-FLC"/>
                             <constraint firstItem="YNc-8C-4rB" firstAttribute="leading" secondItem="lIX-Z5-Qge" secondAttribute="leading" constant="154" id="oTA-rG-PaQ"/>
                             <constraint firstItem="lIX-Z5-Qge" firstAttribute="trailing" secondItem="54Y-2W-Lr0" secondAttribute="trailing" constant="169" id="yrU-i4-pFs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lIX-Z5-Qge"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="0MZ-ad-Ek3" id="BB3-Zj-JP5"/>
+                        <outlet property="loadingIndicator" destination="Lpx-Dd-XeB" id="JuZ-GS-FHG"/>
+                        <outlet property="passwordField" destination="K2B-uu-cw8" id="M0c-jY-0Oa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TuI-uJ-MPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

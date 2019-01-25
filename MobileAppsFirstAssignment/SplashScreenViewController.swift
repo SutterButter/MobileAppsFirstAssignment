@@ -18,7 +18,7 @@ class SplashScreenViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
+        sleep(2)
         performSegue(withIdentifier: "AuthNeeded", sender: self)
     }
     

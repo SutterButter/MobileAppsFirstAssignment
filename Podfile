@@ -8,6 +8,7 @@ target 'MobileAppsFirstAssignment' do
   # Pods for MobileAppsFirstAssignment
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
   target 'MobileAppsFirstAssignmentTests' do
     inherit! :search_paths

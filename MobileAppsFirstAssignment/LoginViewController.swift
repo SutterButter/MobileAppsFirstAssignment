@@ -38,7 +38,8 @@ class LoginViewController: UIViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 } else {
-                    // do nothing
+                    // Go to landing screen
+                    self.performSegue(withIdentifier: "signInToLandingSegue", sender: self)
                 }
             }
         } else { // if email or password is emtpy display message

@@ -60,7 +60,9 @@ class CreateNewUserViewController: UIViewController {
                         if let err = err {
                             print("Error writing document: \(err)")
                         } else {
+                            // Document written, go to landing screen
                             print("Document successfully written!")
+                            self.performSegue(withIdentifier: "createUserToLandingSegue", sender: self)
                         }
                     }
                 } else {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A99FD3921FBF8AC00537336 /* ImageDetectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A99FD3821FBF8AC00537336 /* ImageDetectViewController.swift */; };
 		4F295B8221F91AC200E0CEA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F295B8121F91AC200E0CEA3 /* GoogleService-Info.plist */; };
 		4FD1127321F9221E0013A35A /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1127221F9221E0013A35A /* SplashScreenViewController.swift */; };
 		4FD1127521FA6BA90013A35A /* CreateNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1127421FA6BA90013A35A /* CreateNewUserViewController.swift */; };
@@ -43,8 +44,11 @@
 
 /* Begin PBXFileReference section */
 		24C7F68F9B925C08D83CACD3 /* Pods-MobileAppsFirstAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignment.release.xcconfig"; path = "Target Support Files/Pods-MobileAppsFirstAssignment/Pods-MobileAppsFirstAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		2BBB7D1DBDBED4DB9CE46A01 /* Pods-MobileAppsFirstAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAppsFirstAssignment/Pods-MobileAppsFirstAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		2C23D1D5DAE723F7829C8EF2 /* Pods-MobileAppsFirstAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignment.debug.xcconfig"; path = "Target Support Files/Pods-MobileAppsFirstAssignment/Pods-MobileAppsFirstAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		2F97567F6B33761AE156D597 /* Pods_MobileAppsFirstAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAppsFirstAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D53157C4E484DEA262EC7E /* Pods-MobileAppsFirstAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAppsFirstAssignmentTests/Pods-MobileAppsFirstAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A99FD3821FBF8AC00537336 /* ImageDetectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectViewController.swift; sourceTree = "<group>"; };
 		4BC116D1081729AF363EDC3A /* Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobileAppsFirstAssignmentUITests/Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F295B8121F91AC200E0CEA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4FD1127221F9221E0013A35A /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -65,9 +69,13 @@
 		4FE1B0BB21F2440F0030DFD8 /* MobileAppsFirstAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppsFirstAssignmentUITests.swift; sourceTree = "<group>"; };
 		4FE1B0BD21F2440F0030DFD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7086A8F7B80135B86E096642 /* Pods-MobileAppsFirstAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileAppsFirstAssignmentTests/Pods-MobileAppsFirstAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AA34478E76D9F498D610F8C /* Pods-MobileAppsFirstAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAppsFirstAssignmentUITests/Pods-MobileAppsFirstAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A099BD384B927B330C99CFF0 /* Pods_MobileAppsFirstAssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAppsFirstAssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2AB20B0A30576EAFCF0E66 /* Pods-MobileAppsFirstAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-MobileAppsFirstAssignmentUITests/Pods-MobileAppsFirstAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C933A878A10E9CD14DE89E40 /* Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAppsFirstAssignmentUITests/Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA1882CFEB0BF4116920537C /* Pods-MobileAppsFirstAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAppsFirstAssignmentTests/Pods-MobileAppsFirstAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E44462B19D296A91AD82083C /* Pods-MobileAppsFirstAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-MobileAppsFirstAssignmentTests/Pods-MobileAppsFirstAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		E91B2DDEF0149F55F6DF83BA /* Pods-MobileAppsFirstAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAppsFirstAssignment/Pods-MobileAppsFirstAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		EA90159BF3528171DCAA2C60 /* Pods_MobileAppsFirstAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAppsFirstAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +137,7 @@
 				4FD1127421FA6BA90013A35A /* CreateNewUserViewController.swift */,
 				4FD1127621FADE970013A35A /* LandingPageViewController.swift */,
 				4FE1B09921F2440D0030DFD8 /* AppDelegate.swift */,
+				4A99FD3821FBF8AC00537336 /* ImageDetectViewController.swift */,
 				4FE1B09F21F2440D0030DFD8 /* Main.storyboard */,
 				4FE1B0A221F2440E0030DFD8 /* Assets.xcassets */,
 				4FD1127821FBCA780013A35A /* splash.png */,
@@ -166,6 +175,12 @@
 				E44462B19D296A91AD82083C /* Pods-MobileAppsFirstAssignmentTests.release.xcconfig */,
 				4BC116D1081729AF363EDC3A /* Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig */,
 				BE2AB20B0A30576EAFCF0E66 /* Pods-MobileAppsFirstAssignmentUITests.release.xcconfig */,
+				2BBB7D1DBDBED4DB9CE46A01 /* Pods-MobileAppsFirstAssignment.debug.xcconfig */,
+				E91B2DDEF0149F55F6DF83BA /* Pods-MobileAppsFirstAssignment.release.xcconfig */,
+				CA1882CFEB0BF4116920537C /* Pods-MobileAppsFirstAssignmentTests.debug.xcconfig */,
+				32D53157C4E484DEA262EC7E /* Pods-MobileAppsFirstAssignmentTests.release.xcconfig */,
+				C933A878A10E9CD14DE89E40 /* Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig */,
+				8AA34478E76D9F498D610F8C /* Pods-MobileAppsFirstAssignmentUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -365,15 +380,13 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MobileAppsFirstAssignment/Pods-MobileAppsFirstAssignment-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-MobileAppsFirstAssignment/Pods-MobileAppsFirstAssignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -381,20 +394,18 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileAppsFirstAssignment/Pods-MobileAppsFirstAssignment-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileAppsFirstAssignment/Pods-MobileAppsFirstAssignment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E545210A547E2CC25B04342F /* [CP] Check Pods Manifest.lock */ = {
@@ -429,6 +440,7 @@
 				4FD1127721FADE970013A35A /* LandingPageViewController.swift in Sources */,
 				4FD1127521FA6BA90013A35A /* CreateNewUserViewController.swift in Sources */,
 				4FD3175221F8FC8C00356E00 /* LoginViewController.swift in Sources */,
+				4A99FD3921FBF8AC00537336 /* ImageDetectViewController.swift in Sources */,
 				4FE1B09A21F2440D0030DFD8 /* AppDelegate.swift in Sources */,
 				4FD1127321F9221E0013A35A /* SplashScreenViewController.swift in Sources */,
 			);
@@ -603,11 +615,11 @@
 		};
 		4FE1B0C121F2440F0030DFD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C23D1D5DAE723F7829C8EF2 /* Pods-MobileAppsFirstAssignment.debug.xcconfig */;
+			baseConfigurationReference = 2BBB7D1DBDBED4DB9CE46A01 /* Pods-MobileAppsFirstAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KXWDJEL2WR;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobileAppsFirstAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -623,11 +635,11 @@
 		};
 		4FE1B0C221F2440F0030DFD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24C7F68F9B925C08D83CACD3 /* Pods-MobileAppsFirstAssignment.release.xcconfig */;
+			baseConfigurationReference = E91B2DDEF0149F55F6DF83BA /* Pods-MobileAppsFirstAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KXWDJEL2WR;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobileAppsFirstAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -643,7 +655,7 @@
 		};
 		4FE1B0C421F2440F0030DFD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7086A8F7B80135B86E096642 /* Pods-MobileAppsFirstAssignmentTests.debug.xcconfig */;
+			baseConfigurationReference = CA1882CFEB0BF4116920537C /* Pods-MobileAppsFirstAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -665,7 +677,7 @@
 		};
 		4FE1B0C521F2440F0030DFD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E44462B19D296A91AD82083C /* Pods-MobileAppsFirstAssignmentTests.release.xcconfig */;
+			baseConfigurationReference = 32D53157C4E484DEA262EC7E /* Pods-MobileAppsFirstAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -687,7 +699,7 @@
 		};
 		4FE1B0C721F2440F0030DFD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BC116D1081729AF363EDC3A /* Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig */;
+			baseConfigurationReference = C933A878A10E9CD14DE89E40 /* Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -708,7 +720,7 @@
 		};
 		4FE1B0C821F2440F0030DFD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE2AB20B0A30576EAFCF0E66 /* Pods-MobileAppsFirstAssignmentUITests.release.xcconfig */;
+			baseConfigurationReference = 8AA34478E76D9F498D610F8C /* Pods-MobileAppsFirstAssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

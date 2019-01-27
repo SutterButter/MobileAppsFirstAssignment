@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z5z-Mo-xWI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z5z-Mo-xWI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -111,15 +111,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="takePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="GNM-1D-gnl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="takePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="GNM-1D-gnl">
                                 <rect key="frame" x="67" y="126" width="240" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GNM-1D-gnl" secondAttribute="height" multiplier="48:35" id="bHz-fk-gJF"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mySwatches" translatesAutoresizingMaskIntoConstraints="NO" id="auW-xi-KrC">
                                 <rect key="frame" x="67" y="359" width="240" height="167"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glx-Xm-1oK">
-                                <rect key="frame" x="61" y="126" width="252" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glx-Xm-1oK">
+                                <rect key="frame" x="61" y="126" width="252" height="30"/>
                                 <connections>
                                     <segue destination="sEH-MY-WXy" kind="show" id="mqx-79-OHz"/>
                                 </connections>
@@ -128,8 +130,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GNM-1D-gnl" firstAttribute="leading" secondItem="B81-Wj-zbs" secondAttribute="leading" constant="67" id="GxI-p4-p1G"/>
+                            <constraint firstItem="B81-Wj-zbs" firstAttribute="trailing" secondItem="Glx-Xm-1oK" secondAttribute="trailing" constant="62" id="K4v-dx-Zd3"/>
+                            <constraint firstItem="Glx-Xm-1oK" firstAttribute="top" secondItem="B81-Wj-zbs" secondAttribute="top" constant="106" id="QD0-Iu-66P"/>
                             <constraint firstItem="B81-Wj-zbs" firstAttribute="trailing" secondItem="auW-xi-KrC" secondAttribute="trailing" constant="68" id="UyC-xK-iyL"/>
                             <constraint firstItem="GNM-1D-gnl" firstAttribute="top" secondItem="B81-Wj-zbs" secondAttribute="top" constant="106" id="cWe-DG-OmA"/>
+                            <constraint firstItem="Glx-Xm-1oK" firstAttribute="leading" secondItem="B81-Wj-zbs" secondAttribute="leading" constant="61" id="fiP-Ff-MBB"/>
                             <constraint firstItem="B81-Wj-zbs" firstAttribute="trailing" secondItem="GNM-1D-gnl" secondAttribute="trailing" constant="68" id="gD5-QG-r1W"/>
                             <constraint firstItem="auW-xi-KrC" firstAttribute="top" secondItem="GNM-1D-gnl" secondAttribute="bottom" constant="58" id="vN5-0u-0JX"/>
                             <constraint firstItem="auW-xi-KrC" firstAttribute="leading" secondItem="B81-Wj-zbs" secondAttribute="leading" constant="67" id="yCj-1b-0wV"/>
@@ -149,14 +154,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1h0-nd-wfb">
-                                <rect key="frame" x="67" y="172" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-248797" translatesAutoresizingMaskIntoConstraints="NO" id="1h0-nd-wfb">
+                                <rect key="frame" x="67" y="172" width="240" height="200"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FZU-UD-HWb" firstAttribute="trailing" secondItem="1h0-nd-wfb" secondAttribute="trailing" constant="68" id="hO9-gZ-tuh"/>
+                            <constraint firstItem="1h0-nd-wfb" firstAttribute="top" secondItem="FZU-UD-HWb" secondAttribute="top" constant="152" id="wkO-bP-f10"/>
+                            <constraint firstItem="1h0-nd-wfb" firstAttribute="leading" secondItem="FZU-UD-HWb" secondAttribute="leading" constant="67" id="yTr-EP-5zx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FZU-UD-HWb"/>
                     </view>
+                    <connections>
+                        <outlet property="selectedImage" destination="1h0-nd-wfb" id="ffM-CV-ZiL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUn-gi-vWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,11 +261,12 @@
     </scenes>
     <resources>
         <image name="mySwatches" width="541" height="383"/>
+        <image name="pexels-photo-248797" width="500" height="200"/>
         <image name="splash" width="828" height="299"/>
         <image name="takePhoto" width="537" height="382"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lFn-Qs-41B"/>
+        <segue reference="0Aj-LB-ChG"/>
         <segue reference="J7Z-l0-Av4"/>
     </inferredMetricsTieBreakers>
 </document>

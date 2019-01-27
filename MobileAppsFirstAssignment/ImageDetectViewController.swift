@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class ImageDetectViewController: UIViewController {
+    
+    @IBOutlet weak var selectedImage: UIImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,43 +23,39 @@ class ImageDetectViewController: UIViewController {
     
     
     func makeGetCall(imageURL: String) {
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // Set up the URL request
-        let endpoint: String = "https://api.sightengine.com/1.0/properties.json?api_user=***REMOVED***&api_secret=***REMOVED***&url=\(imageURL)"
-        guard let url = URL(string: endpoint) else {
-            print("Error: cannot create URL")
-            return
-        }
-        let urlRequest = URLRequest(url: url)
+        //let endpoint = "https://api.sightengine.com/1.0/properties.json"
+        let endpoint: String = "https://api.sightengine.com/1.0/properties.json?api_user=***REMOVED***&api_secret=***REMOVED***"//&url=\//(imageURL)"
         
-        // set up the session
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
         
-        // make the request
-        let task = session.dataTask(with: urlRequest) {
-            (data, response, error) in
-            // check for any errors
-            guard error == nil else {
-                print("error calling GET")
-                print(error!)
-                return
-            }
-            // make sure we got data
-            guard let responseData = data else {
-                print("Error: did not receive data")
-                return
-            }
-            // parse the result as JSON
-            do {
-                guard let imageData = try JSONSerialization.jsonObject(with: responseData, options: [])
-                    as? [String: Any] else {
-                        print("error trying to convert data to JSON")
-                        return
+        let imageData = selectedImage.image?.jpegData(compressionQuality: 1)
+        
+        Alamofire.upload(
+            multipartFormData: { multipartFormData in
+                multipartFormData.append(imageData!, withName: "media", fileName: "file.jpg", mimeType: "image/jpeg")
+        },
+            to: endpoint,
+            encodingCompletion: { encodingResult in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.responseJSON { response in
+                        debugPrint(response)
+                    }
+                case .failure(let encodingError):
+                    print(encodingError)
                 }
-                // test
-                print("The dominant color is: " + imageData.colors.dominant)
-            }
-        }
-        task.resume()
+        })
+        
+        
+        
     }
 }

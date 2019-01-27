@@ -111,33 +111,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="takePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="GNM-1D-gnl">
-                                <rect key="frame" x="67" y="126" width="240" height="175"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0o-YH-c6t">
+                                <rect key="frame" x="67" y="124" width="240" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="GNM-1D-gnl" secondAttribute="height" multiplier="48:35" id="bHz-fk-gJF"/>
+                                    <constraint firstAttribute="width" secondItem="T0o-YH-c6t" secondAttribute="height" multiplier="4:3" id="4Nh-DX-BOy"/>
                                 </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mySwatches" translatesAutoresizingMaskIntoConstraints="NO" id="auW-xi-KrC">
-                                <rect key="frame" x="67" y="359" width="240" height="167"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glx-Xm-1oK">
-                                <rect key="frame" x="61" y="126" width="252" height="30"/>
+                                <state key="normal" title="Button" image="takePhoto"/>
                                 <connections>
-                                    <segue destination="sEH-MY-WXy" kind="show" id="mqx-79-OHz"/>
+                                    <segue destination="sEH-MY-WXy" kind="show" id="ZW1-Dp-0mF"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IK-CH-YeA">
+                                <rect key="frame" x="67" y="360" width="240" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5IK-CH-YeA" secondAttribute="height" multiplier="4:3" id="rbr-zF-PWm"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="mySwatches"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GNM-1D-gnl" firstAttribute="leading" secondItem="B81-Wj-zbs" secondAttribute="leading" constant="67" id="GxI-p4-p1G"/>
-                            <constraint firstItem="B81-Wj-zbs" firstAttribute="trailing" secondItem="Glx-Xm-1oK" secondAttribute="trailing" constant="62" id="K4v-dx-Zd3"/>
-                            <constraint firstItem="Glx-Xm-1oK" firstAttribute="top" secondItem="B81-Wj-zbs" secondAttribute="top" constant="106" id="QD0-Iu-66P"/>
-                            <constraint firstItem="B81-Wj-zbs" firstAttribute="trailing" secondItem="auW-xi-KrC" secondAttribute="trailing" constant="68" id="UyC-xK-iyL"/>
-                            <constraint firstItem="GNM-1D-gnl" firstAttribute="top" secondItem="B81-Wj-zbs" secondAttribute="top" constant="106" id="cWe-DG-OmA"/>
-                            <constraint firstItem="Glx-Xm-1oK" firstAttribute="leading" secondItem="B81-Wj-zbs" secondAttribute="leading" constant="61" id="fiP-Ff-MBB"/>
-                            <constraint firstItem="B81-Wj-zbs" firstAttribute="trailing" secondItem="GNM-1D-gnl" secondAttribute="trailing" constant="68" id="gD5-QG-r1W"/>
-                            <constraint firstItem="auW-xi-KrC" firstAttribute="top" secondItem="GNM-1D-gnl" secondAttribute="bottom" constant="58" id="vN5-0u-0JX"/>
-                            <constraint firstItem="auW-xi-KrC" firstAttribute="leading" secondItem="B81-Wj-zbs" secondAttribute="leading" constant="67" id="yCj-1b-0wV"/>
+                            <constraint firstItem="B81-Wj-zbs" firstAttribute="trailing" secondItem="5IK-CH-YeA" secondAttribute="trailing" constant="68" id="0CC-qg-ac2"/>
+                            <constraint firstItem="5IK-CH-YeA" firstAttribute="leading" secondItem="B81-Wj-zbs" secondAttribute="leading" constant="67" id="Em8-qq-dEZ"/>
+                            <constraint firstItem="5IK-CH-YeA" firstAttribute="top" secondItem="T0o-YH-c6t" secondAttribute="bottom" constant="56" id="Mjf-IY-uB4"/>
+                            <constraint firstItem="T0o-YH-c6t" firstAttribute="top" secondItem="B81-Wj-zbs" secondAttribute="top" constant="104" id="dJf-9q-c2u"/>
+                            <constraint firstItem="B81-Wj-zbs" firstAttribute="trailing" secondItem="T0o-YH-c6t" secondAttribute="trailing" constant="68" id="lTn-vN-r2E"/>
+                            <constraint firstItem="T0o-YH-c6t" firstAttribute="leading" secondItem="B81-Wj-zbs" secondAttribute="leading" constant="67" id="n3O-Ge-GZN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B81-Wj-zbs"/>
                     </view>

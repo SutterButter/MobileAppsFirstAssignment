@@ -25,13 +25,6 @@ class ImageDetectViewController: UIViewController {
     func makeGetCall(imageURL: String) {
         
         
-        
-        
-        
-        
-        
-        
-        
         // Set up the URL request
         //let endpoint = "https://api.sightengine.com/1.0/properties.json"
         let endpoint: String = "https://api.sightengine.com/1.0/properties.json?api_user=***REMOVED***&api_secret=***REMOVED***"//&url=\//(imageURL)"

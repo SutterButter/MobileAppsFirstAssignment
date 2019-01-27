@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FirebaseAuth
 import Firebase
 
 class CreateNewUserViewController: UIViewController {
@@ -50,7 +49,7 @@ class CreateNewUserViewController: UIViewController {
                     let alert = UIAlertController(title: "Problems creating a new user", message: error.localizedDescription, preferredStyle: UIAlertController.Style.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
-                } else if let userId = authResult?.uid {
+                } else if let userId = authResult?.user.uid {
                     
                     // Store name in user database
                     self.db.collection("users").document(userId).setData([

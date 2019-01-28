@@ -17,6 +17,10 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
     @IBOutlet weak var secondaryColor: UIImageView!
     @IBOutlet weak var tirtiaryColor: UIImageView!
     
+    @IBOutlet weak var primaryLabel: UILabel!
+    @IBOutlet weak var secondaryLabel: UILabel!
+    @IBOutlet weak var tirtiaryLabel: UILabel!
+    
     var passedImage: UIImage!
     
     
@@ -81,6 +85,10 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
                         self.primaryColor.image = UIImage.imageWithColor(tintColor: UIColor(hexString: dominantHex)!)
                         self.secondaryColor.image = UIImage.imageWithColor(tintColor: UIColor(hexString: secondaryHex)!)
                         self.tirtiaryColor.image = UIImage.imageWithColor(tintColor: UIColor(hexString: tirtiaryHex)!)
+                        
+                        self.primaryLabel.text = dominantHex
+                        self.secondaryLabel.text = secondaryHex
+                        self.tirtiaryLabel.text = tirtiaryHex
                         
                         print(colors)
                         print(dominant)

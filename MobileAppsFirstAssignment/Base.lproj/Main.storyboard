@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z5z-Mo-xWI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mln-tg-mrB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -118,7 +118,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="takePhoto"/>
                                 <connections>
-                                    <segue destination="sEH-MY-WXy" kind="show" id="ZW1-Dp-0mF"/>
+                                    <action selector="takePhotoPressed:" destination="Mln-tg-mrB" eventType="touchUpInside" id="Uel-5c-2Gg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5IK-CH-YeA">
@@ -140,6 +140,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B81-Wj-zbs"/>
                     </view>
+                    <connections>
+                        <segue destination="sEH-MY-WXy" kind="presentation" identifier="photoChosenSegue" id="ToZ-8P-Ekh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgW-8h-w8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,25 +156,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-248797" translatesAutoresizingMaskIntoConstraints="NO" id="1h0-nd-wfb">
-                                <rect key="frame" x="67" y="172" width="240" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-248797" translatesAutoresizingMaskIntoConstraints="NO" id="1h0-nd-wfb">
+                                <rect key="frame" x="67" y="70" width="240" height="320"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.70588235290000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1h0-nd-wfb" secondAttribute="height" multiplier="240:320" id="F27-dp-Wi7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FJj-n5-WPI">
+                                <rect key="frame" x="67" y="417" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DKH-Dj-Mzv">
+                                <rect key="frame" x="155" y="417" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tr4-ER-Qra">
+                                <rect key="frame" x="242" y="417" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="1h0-nd-wfb" firstAttribute="top" secondItem="FZU-UD-HWb" secondAttribute="top" constant="50" id="ejf-AM-caA"/>
                             <constraint firstItem="FZU-UD-HWb" firstAttribute="trailing" secondItem="1h0-nd-wfb" secondAttribute="trailing" constant="68" id="hO9-gZ-tuh"/>
-                            <constraint firstItem="1h0-nd-wfb" firstAttribute="top" secondItem="FZU-UD-HWb" secondAttribute="top" constant="152" id="wkO-bP-f10"/>
                             <constraint firstItem="1h0-nd-wfb" firstAttribute="leading" secondItem="FZU-UD-HWb" secondAttribute="leading" constant="67" id="yTr-EP-5zx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FZU-UD-HWb"/>
                     </view>
                     <connections>
+                        <outlet property="primaryColor" destination="FJj-n5-WPI" id="RK6-Pc-a5L"/>
+                        <outlet property="secondaryColor" destination="DKH-Dj-Mzv" id="mqv-oZ-yb7"/>
                         <outlet property="selectedImage" destination="1h0-nd-wfb" id="ffM-CV-ZiL"/>
+                        <outlet property="tirtiaryColor" destination="Tr4-ER-Qra" id="E6E-n0-BV0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUn-gi-vWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="-120"/>
+            <point key="canvasLocation" x="1300" y="-120.08995502248877"/>
         </scene>
         <!--Create New User View Controller-->
         <scene sceneID="ocr-z4-lgu">

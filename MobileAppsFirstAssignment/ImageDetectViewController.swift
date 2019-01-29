@@ -22,15 +22,33 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
     @IBOutlet weak var tirtiaryLabel: UILabel!
     
     var passedImage: UIImage!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.selectedImage.image = passedImage
         makeGetCall()
+        
+//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+//        primaryColor.isUserInteractionEnabled = true
+//        primaryColor.addGestureRecognizer(tapGestureRecognizer)
+//        secondaryColor.isUserInteractionEnabled = true
+//        secondaryColor.addGestureRecognizer(tapGestureRecognizer)
+//        tirtiaryColor.isUserInteractionEnabled = true
+//        tirtiaryColor.addGestureRecognizer(tapGestureRecognizer)
+        
+        
     }
-   
+    
+//    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+//        let tappedImage = tapGestureRecognizer.view as! UIImageView
+//        print(tappedImage.tag)
+//        if (tappedImage.tag == 0) {
+//            // get hexcode from label
+//            var color = primaryLabel.text
+//
+//        }
+//    }
     
     func makeGetCall() {
         
@@ -81,7 +99,6 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
                         } else if others.count >= 1 {
                             secondaryHex = others[0]["hex"] as! String
                         }
-                        
                         self.primaryColor.image = UIImage.imageWithColor(tintColor: UIColor(hexString: dominantHex)!)
                         self.secondaryColor.image = UIImage.imageWithColor(tintColor: UIColor(hexString: secondaryHex)!)
                         self.tirtiaryColor.image = UIImage.imageWithColor(tintColor: UIColor(hexString: tirtiaryHex)!)
@@ -101,8 +118,8 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
                 }
         })
     }
-    
 }
+
 extension UIImage {
     static func imageWithColor(tintColor: UIColor) -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)

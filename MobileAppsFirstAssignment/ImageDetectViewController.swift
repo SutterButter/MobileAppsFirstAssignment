@@ -84,7 +84,7 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
                         guard let value = response.result.value as? [String: Any],
                             let colors = value["colors"] as? [String: Any?],
                             let dominant = colors["dominant"] as? [String: Any],
-                            let dominantHex = dominant["hex"] as? String,
+                            var dominantHex = dominant["hex"] as? String,
                             let others = colors["other"] as? [[String: Any]]
                         else {
                                 print("Missing data")
@@ -99,6 +99,7 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
                         } else if others.count >= 1 {
                             secondaryHex = others[0]["hex"] as! String
                         }
+                        
                         self.primaryColor.image = UIImage.imageWithColor(tintColor: UIColor(hexString: dominantHex)!)
                         self.secondaryColor.image = UIImage.imageWithColor(tintColor: UIColor(hexString: secondaryHex)!)
                         self.tirtiaryColor.image = UIImage.imageWithColor(tintColor: UIColor(hexString: tirtiaryHex)!)

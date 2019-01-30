@@ -136,8 +136,8 @@
 				4FD3175121F8FC8C00356E00 /* LoginViewController.swift */,
 				4FD1127421FA6BA90013A35A /* CreateNewUserViewController.swift */,
 				4FD1127621FADE970013A35A /* LandingPageViewController.swift */,
-				4FE1B09921F2440D0030DFD8 /* AppDelegate.swift */,
 				4A99FD3821FBF8AC00537336 /* ImageDetectViewController.swift */,
+				4FE1B09921F2440D0030DFD8 /* AppDelegate.swift */,
 				4FE1B09F21F2440D0030DFD8 /* Main.storyboard */,
 				4FE1B0A221F2440E0030DFD8 /* Assets.xcassets */,
 				4FD1127821FBCA780013A35A /* splash.png */,
@@ -621,14 +621,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6Z6923K2K;
+				DEVELOPMENT_TEAM = KXWDJEL2WR;
 				INFOPLIST_FILE = MobileAppsFirstAssignment/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.noahjsutter.MAS-Swatch2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noahjsutter.MAS-Swatch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -641,7 +641,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6Z6923K2K;
+				DEVELOPMENT_TEAM = KXWDJEL2WR;
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
@@ -666,7 +666,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.noahjsutter.MAS-Swatch2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noahjsutter.MAS-Swatch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

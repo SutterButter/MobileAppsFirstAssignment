@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4A99FD3921FBF8AC00537336 /* ImageDetectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A99FD3821FBF8AC00537336 /* ImageDetectViewController.swift */; };
 		4F295B8221F91AC200E0CEA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F295B8121F91AC200E0CEA3 /* GoogleService-Info.plist */; };
-		4FB1AFE222016E3800C87ADF /* SightEngineKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FB1AFE122016E3800C87ADF /* SightEngineKeys.plist */; };
 		4FD1127321F9221E0013A35A /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1127221F9221E0013A35A /* SplashScreenViewController.swift */; };
 		4FD1127521FA6BA90013A35A /* CreateNewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1127421FA6BA90013A35A /* CreateNewUserViewController.swift */; };
 		4FD1127721FADE970013A35A /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1127621FADE970013A35A /* LandingPageViewController.swift */; };
@@ -52,7 +51,6 @@
 		4A99FD3821FBF8AC00537336 /* ImageDetectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectViewController.swift; sourceTree = "<group>"; };
 		4BC116D1081729AF363EDC3A /* Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-MobileAppsFirstAssignmentUITests/Pods-MobileAppsFirstAssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4F295B8121F91AC200E0CEA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		4FB1AFE122016E3800C87ADF /* SightEngineKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SightEngineKeys.plist; sourceTree = "<group>"; };
 		4FD1127221F9221E0013A35A /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		4FD1127421FA6BA90013A35A /* CreateNewUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewUserViewController.swift; sourceTree = "<group>"; };
 		4FD1127621FADE970013A35A /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 				4FD1127821FBCA780013A35A /* splash.png */,
 				4FE1B0A421F2440E0030DFD8 /* LaunchScreen.storyboard */,
 				4FE1B0A721F2440E0030DFD8 /* Info.plist */,
-				4FB1AFE122016E3800C87ADF /* SightEngineKeys.plist */,
 				4F295B8121F91AC200E0CEA3 /* GoogleService-Info.plist */,
 			);
 			path = MobileAppsFirstAssignment;
@@ -306,7 +303,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FB1AFE222016E3800C87ADF /* SightEngineKeys.plist in Resources */,
 				4FE1B0A621F2440E0030DFD8 /* LaunchScreen.storyboard in Resources */,
 				4F295B8221F91AC200E0CEA3 /* GoogleService-Info.plist in Resources */,
 				4FE1B0A321F2440E0030DFD8 /* Assets.xcassets in Resources */,

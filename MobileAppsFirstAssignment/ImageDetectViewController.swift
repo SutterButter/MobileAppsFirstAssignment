@@ -54,7 +54,17 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
         
         // Set up the URL request
         //let endpoint = "https://api.sightengine.com/1.0/properties.json"
-        let endpoint: String = "https://api.sightengine.com/1.0/properties.json?api_user=***REMOVED***&api_secret=***REMOVED***"//&url=\//(imageURL)"
+        var user = ""
+        var secret = ""
+        
+        if let path = Bundle.main.path(forResource: "SightEngineKeys", ofType: "plist") {
+            let keys = NSDictionary(contentsOfFile: path)
+            user = keys?.value(forKey: "api_user") as! String
+            secret = keys?.value(forKey: "api_secret") as! String
+        } else {
+            print("unable to get keys")
+        }
+        let endpoint: String = "https://api.sightengine.com/1.0/properties.json?api_user=\(user)&api_secret=\(secret)"
 
         var quality = 0.75
         var imageData = selectedImage.image?.jpegData(compressionQuality: CGFloat(quality))
